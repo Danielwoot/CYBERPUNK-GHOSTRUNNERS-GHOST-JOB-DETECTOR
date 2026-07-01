@@ -7,6 +7,8 @@
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Puppeteer](https://img.shields.io/badge/Puppeteer-40B5A4?style=for-the-badge&logo=puppeteer&logoColor=white)
 
+![Cyberpunk Logo](https://i.postimg.cc/DwqvDYvG/logo.png)
+
 **Ghostrunners** is a full-stack intelligence tool designed to expose "Ghost Jobs" in the corporate world. By analyzing corporate job requisition data and recent public contract awards, it calculates a **Corporate Ghost Index (CGI)** and an **Operational Health Score**.
 
 It leverages headless browser automation (Puppeteer) to query real-time AI search engines and process the raw intelligence into a sleek, *Cyberpunk: Edgerunners* inspired interface.
@@ -14,7 +16,7 @@ It leverages headless browser automation (Puppeteer) to query real-time AI searc
 ---
 
 ## ✨ Features
-
+![CyberpunkUI](https://i.postimg.cc/nMf8GpQy/Screenshot-2026-06-30-181134.png)
 - **Neon Cyberpunk UI**: A highly stylized, terminal-like interface featuring authentic glitch animations, aggressive neon colors, and custom clip-path geometry.
 - **Real-Time Data Extraction**: Utilizes Puppeteer to securely automate and scrape data from modern AI search engines such as Perplexity, Felo, etc...
 - **Data Matrix Breakdown**:
