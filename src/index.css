@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Rajdhani", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-cyber-yellow: #fcee0a;
+  --color-cyber-blue: #00f0ff;
+  --color-cyber-red: #ff003c;
+  --color-cyber-dark: #090909;
+  --color-cyber-gray: #1a1a1a;
+}
+
+body {
+  background-color: var(--color-cyber-dark);
+  color: #fff;
+  font-family: var(--font-sans);
+}
+
+.glitch-border {
+  position: relative;
+}
+
+.glitch-border::before {
+  content: '';
+  position: absolute;
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  background: linear-gradient(45deg, var(--color-cyber-red), var(--color-cyber-blue), var(--color-cyber-yellow));
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Cyberpunk Edgerunners Style Buttons & Inputs */
+.cyber-btn {
+  clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+  position: relative;
+}
+
+.cyber-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-cyber-dark);
+}
+
+.cyber-input-wrap {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.cyber-panel {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
+}
+
+/* Random Glitch Animations */
+@keyframes glitch-skew {
+  0%, 90% { transform: skew(0deg); }
+  92% { transform: skew(5deg); }
+  94% { transform: skew(-5deg); }
+  96% { transform: skew(2deg); }
+  98% { transform: skew(-2deg); }
+  100% { transform: skew(0deg); }
+}
+
+@keyframes glitch-color {
+  0%, 90% { text-shadow: none; }
+  92% { text-shadow: 2px 2px var(--color-cyber-red), -2px -2px var(--color-cyber-blue); }
+  94% { text-shadow: -2px 2px var(--color-cyber-red), 2px -2px var(--color-cyber-blue); }
+  96% { text-shadow: none; }
+}
+
+.glitch-text-1 {
+  animation: glitch-skew 3.5s infinite, glitch-color 3.5s infinite;
+}
+
+.glitch-text-2 {
+  animation: glitch-skew 5s infinite 1.2s, glitch-color 5s infinite 1.2s;
+}
+
+.glitch-text-3 {
+  animation: glitch-skew 7s infinite 2.5s, glitch-color 7s infinite 2.5s;
+}
+
+.glitch-text-4 {
+  animation: glitch-skew 4.2s infinite 0.8s, glitch-color 4.2s infinite 0.8s;
+}

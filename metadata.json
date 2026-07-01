@@ -1,0 +1,6 @@
+{
+  "name": "Ghost Index Analyzer",
+  "description": "Analyze a company's job requisition data and recent public contract awards to calculate its Ghost Index (CGI) and overall Operational Health Score.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
