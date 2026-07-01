@@ -98,6 +98,3 @@ This will bundle the React frontend into `dist/` and compile the Express server 
 
 ---
 
-<p align="center">
-  <b>&copy; 2026 Team Gecko</b>
-</p>
